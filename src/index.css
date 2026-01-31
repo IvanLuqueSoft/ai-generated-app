@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Roboto Mono', monospace;
+}
+
+/* Custom scrollbar for minimalist look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
